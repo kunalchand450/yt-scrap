@@ -21,8 +21,10 @@ source crawlerenv/bin/activate
 pip install flask scrapy scrapy-user-agents pandas google-api-python-client jsoncsv
 rm -rf scrap_app
 # tell flask the app name
+a2enmod proxy_http
+cp scrap_app.conf /etc/apache2/sites-enabled/
+service apache2 restart
 export FLASK_APP='scrap_app'
 # start flask app
 echo running flask app
-flask run
-
+flask run --host="0.0.0.0"

@@ -1,7 +1,7 @@
 python3 -m pip install virtualenv
 cd /root/
 # put your html link and edit this below command before running this project
-git clone ***
+git clone https://github.com/kunalchand450/yt-scrap.git
 cp -r yt-scrap/* .
 #!/usr/bin/bash
 deactivate

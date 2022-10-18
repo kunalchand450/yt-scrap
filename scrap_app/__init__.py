@@ -67,3 +67,4 @@ def create_app(test_config=None):
             if request.form['website'] in api_scraps: # this will select youtube scrapper from option
                 subprocess.run(["python3", f"{request.args['website']}_api_scraper.py", "-i", request.args['url'], "-a", request.args['auth_key']])
             return send_file(os.path.join(tempfile.gettempdir(),'output.csv'))
+ return app

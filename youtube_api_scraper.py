@@ -7,7 +7,7 @@ import argparse
 from googleapiclient.discovery import build
 
 
-#api_key = "AIzaSyAheRVcXlqrMhBUoVzWJMdBN1sjx-iqt4A" # Replace this dummy api key with your own.
+#api_key = "AIzaSyAheRVcXlqrMhBUoVzWJMdBN1***-*****" # Replace this dummy api key with your own.
 
 
 #ID = "jNDFRzls9Yk" # Replace this YouTube video ID with your own.

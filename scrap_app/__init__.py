@@ -14,7 +14,7 @@ def create_app(test_config=None):
         # DATABASE=os.path.join(app.instance_path, 'scrap_app.sqlite'),   # Default configuration settings for flask app shoud be changed with frontend lib
     )
     if __name__ == "__main__":
-    app.run()
+        app.run()
     if test_config is None:
         # load the instance config, if it exists, when not testing
         app.config.from_pyfile('config.py', silent=True)

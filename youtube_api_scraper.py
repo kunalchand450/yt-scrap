@@ -1,6 +1,4 @@
-# Scrape Or Download Comments Using Python Through The Youtube Data API
-# Watch the youtube video for explaination
-# https://youtu.be/B9uCX2s7y7A
+
 
 import pandas as pd
 import os

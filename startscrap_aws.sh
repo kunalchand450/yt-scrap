@@ -3,8 +3,6 @@ cd /root/
 # put your html link and edit this below command before running this project
 git clone https://github.com/kunalchand450/yt-scrap.git
 cp -r yt-scrap/* .
-#!/usr/bin/bash
-deactivate
 cd /root/
 # initialize virtualenv
 python3 -m virtualenv crawlerenv

@@ -39,6 +39,6 @@ def submit():
             subprocess.run(["scrapy", "crawl", "-O", os.path.join(tempfile.gettempdir(),'output.csv'), "-t", "csv", f"{request.form['website']}spider"]) #this is command for run scrapy file with template crwal and type csv.
 
 #         # condition to select and run youtube api scraper
-#         if request.form['website'] in api_scraps: # this will select youtube scrapper from option
-#             subprocess.run(["python3", f"{request.args['website']}_api_scraper.py", "-i", request.args['url'], "-a", request.args['auth_key']])
-#         return send_file(os.path.join(tempfile.gettempdir(),'output.csv'))
+        if request.form['website'] in api_scraps: # this will select youtube scrapper from option
+            subprocess.run(["python3", f"{request.args['website']}_api_scraper.py", "-i", request.args['url'], "-a", request.args['auth_key']])
+        return send_file(os.path.join(tempfile.gettempdir(),'output.csv'))

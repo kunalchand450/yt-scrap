@@ -1,7 +1,7 @@
 python3 -m pip install virtualenv
 cd /root/
-# put your html link and edit this below command before running this project
-git clone https://github.com/kunalchand450/yt-scrap.git
+# put your ssh code link and edit this below command before running this project
+git clone https://github.com/kunalchand30/yt-scrap.git
 cp -r yt-scrap/* .
 #!/usr/bin/bash
 deactivate
@@ -20,8 +20,8 @@ source crawlerenv/bin/activate
 # install flask scrapy and scrapy user agents
 pip install flask scrapy scrapy-user-agents pandas google-api-python-client jsoncsv
 rm -rf scrap_app
-# tell flask the app name
+# tell flask the app names
 export FLASK_APP='scrap_app'
 # start flask app
 echo running flask app
-flask run --host="0.0.0.0"
+flask run

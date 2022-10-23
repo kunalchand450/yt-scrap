@@ -49,6 +49,9 @@ ROBOTSTXT_OBEY = False
 #    'webscrapers.middlewares.WebscrapersSpiderMiddleware': 543,
 #}
 DOWNLOADER_MIDDLEWARES = {
+'scraping_hub.middlewares.CloudFlareMiddleware': 560
+}
+DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
 }
